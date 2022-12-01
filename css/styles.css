@@ -97,6 +97,12 @@ body {
     text-decoration: none;
     color: var(--brand-color-text);  
 }
+.link:hover {
+    color: var(--brand-color-link);
+}
+.link:focus {
+    color: var(--brand-color-link);
+}
 
 .link-cont {
     font-weight: 500;
@@ -105,6 +111,12 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--brand-color-description);
+}
+.link-cont:hover {
+    color: var(--brand-color-link);
+}
+.link-cont:focus {
+    color: var(--brand-color-link); 
 }
 
 /* header end */
@@ -295,47 +307,7 @@ border-radius: 0px 0px 4px 4px;
     text-decoration: none;
     color: var(--brand-color-description);
 }*/
-.link-cont:hover {
-    color: var(--brand-color-link);
-}
 
-.link-cont:focus {
-    color: var(--brand-color-link); 
-}
-.link-add {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--brand-color-hero);
-}
-.link-add:hover {
-    color: var(--brand-color-link);
-}
-.link-add:focus {
-    color: var(--brand-color-link);
-} 
-.link-cont-two {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--brand-color-contacts);
-}
-.link-cont-two:hover {
-    color: var(--brand-color-link);
-}
-.link-cont-two:focus {
-    color: var(--brand-color-link); 
-}
-.link:hover {
-    color: var(--brand-color-link);
-}
-.link:focus {
-    color: var(--brand-color-link);
-}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -465,7 +437,7 @@ border-radius: 0px 0px 4px 4px;
     height: 54px;
     margin-bottom: 34px;
 }
-
+/* footer */
 .bgd {
     max-width: 1600px;
     padding-top: 60px;
@@ -501,13 +473,41 @@ border-radius: 0px 0px 4px 4px;
     font-style: normal;
     margin-top: 28px;
 }
-.link-style-foot {
+.list-style-foot {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
-
+.link-add {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--brand-color-hero);
+}
+.link-add:hover {
+    color: var(--brand-color-link);
+}
+.link-add:focus {
+    color: var(--brand-color-link);
+} 
+.link-cont-foot {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--brand-color-contacts);
+}
+.link-cont-foot:hover {
+    color: var(--brand-color-link);
+}
+.link-cont-foot:focus {
+    color: var(--brand-color-link); 
+}
+/* footer end */
 
 .container-portf {
     margin-top: 94px;
