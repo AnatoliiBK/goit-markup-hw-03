@@ -13,85 +13,93 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <a href="./index.html" lang="en" class="link-logo">Web<span class="link-logo-two">Studio</span></a>
-            <ul class="link-style">
-                <li><a href="./index.html" class="link">Студія </a></li>
-                <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                <li><a href="" class="link link-marg">Контакти</a></li>
-            </ul>
-            <ul class="link-style">
-                <li><a href="Mailto:info@devstudio.com" class="link-cont">info@devstudio.com</a></li>
-                <li><a href="Tel:+380961111111" class="link-cont link-cont-marg">+38 096 111 11 11</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="container">
+            <nav class="nav">
+                <a href="./index.html" lang="en" class="link-logo">Web<span class="link-logo-two">Studio</span></a>
+                <ul class="link-style">
+                    <li class="list"><a href="./index.html" class="link">Студія</a></li>
+                    <li class="list"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+                    <li class="list"><a href="" class="link">Контакти</a></li>
+                </ul>
+                <ul class="link-style-end">
+                    <li><a href="Mailto:info@devstudio.com" class="link-cont">info@devstudio.com</a></li>
+                    <li><a href="Tel:+380961111111" class="link-cont">+38 096 111 11 11</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
     <main>
-        <section>
-            <h1>Веб Студіо: можливості і приклади</h1>
-            <ul class="link-style">
-                <li><button type="button" class="button-one">Усі</button></li>
-                <li><button type="button" class="button-two">Веб-сайти</button></li>
-                <li><button type="button" class="button-three">Додатки</button></li>
-                <li><button type="button" class="button-four">Дизайн</button></li>
-                <li><button type="button" class="button-five">Маркетинг</button></li>
-            </ul>
-        
-            <ul class="link-style">
-                <li>
-                    <img src="./img/img1p.jpg" alt="Технокряк Веб-сайт " width="370">
-                    <h2 class="titles-portf">Технокряк</h2>
-                    <p class="desc-portf">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./img/img2p.jpg" alt="Постер New Orlean vs Golden Star Дизайн " width="370">
-                    <h2 class="titles-portf">Постер New Orlean vs Golden Star</h2>
-                    <p class="desc-portf">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./img/img3p.jpg" alt="Ресторан Seafood Додаток" width="370">
-                    <h2 class="titles-portf">Ресторан Seafood</h2>
-                    <p class="desc-portf">Додаток</p>
-                </li>
-            </ul>
-            <ul class="link-style">
-                <li>
-                    <img src="./img/img4p.jpg" alt="Проєкт Prime Маркетинг" width="370">
-                    <h2 class="titles-portf">Проєкт Prime</h2>
-                    <p class="desc-portf">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./img/img5p.jpg" alt="Проєкт Boxes Додаток" width="370">
-                    <h2 class="titles-portf">Проєкт Boxes</h2>
-                    <p class="desc-portf">Додаток</p>
-                </li>
-                <li>
-                    <img src="./img/img6p.jpg" alt="Inspiration has no Borders Веб-сайт" width="370">
-                    <h2 class="titles-portf">Inspiration has no Borders</h2>
-                   <p class="desc-portf">Веб-сайт</p>
-                </li>
-            </ul>
-            <ul class="link-style">
-                <li>
-                    <img src="./img/img7p.jpg" alt="Видання Limited Edition Дизайн" width="370">
-                    <h2 class="titles-portf">Видання Limited Edition</h2>
-                    <p class="desc-portf">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./img/img8p.jpg" alt="Проєкт LAB Маркетинг" width="370">
-                    <h2 class="titles-portf">Проєкт LAB</h2>
-                    <p class="desc-portf">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./img/img9p.jpg" alt="Growing Business Додаток" width="370">
-                    <h2 class="titles-portf">Growing Business</h2>
-                    <p class="desc-portf">Додаток</p>
-                </li>
-            </ul>
+        <section class="portf-container">
+            <div class="container-portf">
+             <h1 class="title-hidd">Веб Студіо: можливості і приклади</h1>
+                <div class="style-button">
+                    <ul class="list-button">
+                        <li><button type="button" class="button button-one">Усі</button></li>
+                        <li><button type="button" class="button button-two">Веб-сайти</button></li>
+                        <li><button type="button" class="button button-three">Додатки</button></li>
+                        <li><button type="button" class="button button-four">Дизайн</button></li>
+                        <li><button type="button" class="button button-five">Маркетинг</button></li>
+                    </ul>
+                </div>
+
+                <div class="data-portfolio">       
+                    <ul class="list-card">
+                        <li class="item">
+                            <img class="card-image" src="./img/img1p.jpg" alt="Технокряк Веб-сайт " width="370">
+                            <h2 class="titles-portf">Технокряк</h2>
+                            <p class="desc-portf">Веб-сайт</p>
+                        </li>
+                        <li class="item">
+                            <img class="card-image" src="./img/img2p.jpg" alt="Постер New Orlean vs Golden Star Дизайн " width="370">
+                            <h2 class="titles-portf">Постер New Orlean vs Golden Star</h2>
+                            <p class="desc-portf">Дизайн</p>
+                        </li>
+                        <li class="item">
+                            <img class="card-image" src="./img/img3p.jpg" alt="Ресторан Seafood Додаток" width="370">
+                            <h2 class="titles-portf">Ресторан Seafood</h2>
+                            <p class="desc-portf">Додаток</p>
+                        </li>
+                    
+                    
+                        <li class="item">
+                            <img class="card-image" src="./img/img4p.jpg" alt="Проєкт Prime Маркетинг" width="370">
+                            <h2 class="titles-portf">Проєкт Prime</h2>
+                            <p class="desc-portf">Маркетинг</p>
+                        </li>
+                        <li class="item">
+                            <img class="card-image" src="./img/img5p.jpg" alt="Проєкт Boxes Додаток" width="370">
+                            <h2 class="titles-portf">Проєкт Boxes</h2>
+                            <p class="desc-portf">Додаток</p>
+                        </li>
+                        <li class="item">
+                            <img class="card-image" src="./img/img6p.jpg" alt="Inspiration has no Borders Веб-сайт" width="370">
+                            <h2 class="titles-portf">Inspiration has no Borders</h2>
+                        <p class="desc-portf">Веб-сайт</p>
+                        </li>
+                    
+                    
+                        <li class="item">
+                            <img class="card-image" src="./img/img7p.jpg" alt="Видання Limited Edition Дизайн" width="370">
+                            <h2 class="titles-portf">Видання Limited Edition</h2>
+                            <p class="desc-portf">Дизайн</p>
+                        </li>
+                        <li class="item">
+                            <img class="card-image" src="./img/img8p.jpg" alt="Проєкт LAB Маркетинг" width="370">
+                            <h2 class="titles-portf">Проєкт LAB</h2>
+                            <p class="desc-portf">Маркетинг</p>
+                        </li>
+                        <li class="item">
+                            <img class="card-image" src="./img/img9p.jpg" alt="Growing Business Додаток" width="370">
+                            <h2 class="titles-portf">Growing Business</h2>
+                            <p class="desc-portf">Додаток</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="bgd">
-        <a href="" lang="en" class="link-logo">Web<span class="link-logo-three">Studio</span></a>
+        <a href="" lang="en" class="link-logo-foot">Web<span class="link-logo-three">Studio</span></a>
         <address class="address-style">
           <ul class="link-style-foot">
             <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" 
