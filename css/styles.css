@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 :root {
     --brand-color-text: #212121;
     --brand-color-hero: #FFFFFF;
@@ -13,11 +20,32 @@
 }
 
 body {
-    width: 1600px;
+
     font-family: 'Roboto', sans-serif;
     color: var(--brand-color-text);
 
 }
+
+/* СПІЛЬНЕ*/
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {    
+    width: 1200px;    
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.card-image {
+    display: block;
+} 
+
+/* СПІЛЬНЕ    end */
 
 
 
@@ -25,17 +53,17 @@ body {
 
 
 .header {
-    max-width: 1600px;
+    
     background: var(--brand-color-hero);
     border-bottom: 1px solid #ECECEC;
-    
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-style {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    
     align-items: center;
 }
 .navigation {
@@ -121,39 +149,21 @@ body {
 /* ШАПКА   end */
 
 
-/* СПІЛЬНЕ*/
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.container {
-    
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.card-image {
-    display: block;
-} 
-
-/* СПІЛЬНЕ    end */
-
 
 /* ГОЛОВНА */
+
 .hero-section {
-    background: var(--brand-color-backgraund)
+    background: var(--brand-color-backgraund);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
+
 .hero-box {
+    height: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 106px;
-    margin-bottom: 186px;
+    align-items: center;    
+    row-gap: 30px;
 }
 
 .hero-title {
@@ -166,7 +176,8 @@ body {
     color: var(--brand-color-hero);
     text-align: center;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    
 }
 
 .button-zero {
@@ -194,11 +205,8 @@ body {
 
 
 
-/* ОСОБЛИВОСТІ ТА ЗАЙНЯТІСТЬ */
+/* ОСОБЛИВОСТІ */
 
-.description {
-    margin-bottom: 94px;
-}
 
 .title-hidd {
     margin-right: auto;
@@ -233,8 +241,17 @@ body {
     color: var(--brand-color-description);
 }
 
-/* частина секції з заголовком і зображеннями */
+/* ОСОБЛИВОСТІ   end */
 
+
+
+
+/* ЗАЙНЯТІСТЬ */
+
+
+.section-busi {
+    padding-top: 0;
+}
 
 .title-busi {
     margin-top: 0;
@@ -255,7 +272,7 @@ body {
 }
 
 
-/* ОСОБЛИВОСТІ ТА ЗАЙНЯТІСТЬ  end*/
+/*ЗАЙНЯТІСТЬ  end*/
 
 
 
@@ -264,7 +281,7 @@ body {
 
 .team-section {
     background: var(--brand-color-com);
-    max-width: 1600px;
+    
     
 }
 
@@ -327,14 +344,13 @@ body {
 /* ТІДВАЛ */
 
 .footer {
-    max-width: 1600px;
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--brand-color-backgraund);
 }
 
 .logo-foot {
-    
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.2;
@@ -367,7 +383,9 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .link-add {
+    margin-bottom: 12px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -382,6 +400,7 @@ body {
     color: var(--brand-color-link);
 } 
 .link-cont-foot {
+    margin-bottom: 12px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -403,14 +422,12 @@ body {
 
 /*  ПОРТФОЛІО */
 
-.style-button {
-    
-}
+
 .list-button {
     padding-left: 0;
     margin: 0 auto 50px;
     width: 569px;
-    height: 54px;
+    
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -459,11 +476,13 @@ button {
 }
 
 .list-card {
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;   
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    row-gap: 40px;
+    row-gap: 30px;
     column-gap: 30px;
 }
 
