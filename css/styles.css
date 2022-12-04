@@ -307,7 +307,7 @@ body {
 
 .list-cards > li {
     width: 270px;
-    background: #FFFFFF;
+    background: var(--brand-color-hero);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -382,10 +382,11 @@ body {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
 }
-
-.link-add {
-    margin-bottom: 12px;
+.link-add {  
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -400,7 +401,7 @@ body {
     color: var(--brand-color-link);
 } 
 .link-cont-foot {
-    margin-bottom: 12px;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -426,12 +427,12 @@ body {
 .list-button {
     padding-left: 0;
     margin: 0 auto 50px;
-    width: 569px;
+    
     
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    gap: 8px;
+    justify-content: center;
+    column-gap: 8px;
 }
 
 button {
@@ -439,8 +440,7 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    height: 38px;
-    padding: 0;
+    padding: 6px 22px 6px 22px;   
     letter-spacing: 0.03em;
     color: var(--brand-color-text);
     background: var(--brand-color-com);
@@ -457,22 +457,6 @@ button {
 .button:focus {
     background: var(--brand-color-button);
     color: var(--brand-color-hero);
-}
-
-.button-one {    
-    width: 67px;    
-}
-.button-two {    
-    width: 125px;    
-}
-.button-three {    
-    width: 112px;    
-}
-.button-four {    
-    width: 103px;  
-}
-.button-five {    
-    width: 130px;    
 }
 
 .list-card {
